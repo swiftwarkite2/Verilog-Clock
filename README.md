@@ -1,4 +1,8 @@
 # Verilog-Clock
+The entire project directory has been copied in this repository
+all of my code files are located here:
+project_7\project_7.srcs\sources_1\new
+
 Basys 3 12 hour clock, uses switches to set time.
 In order to use this code a user needs to do the following.
 1 Install Vivado
