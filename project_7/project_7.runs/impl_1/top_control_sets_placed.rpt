@@ -1,0 +1,128 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Sun Oct  6 18:31:34 2024
+| Host         : DESKTOP-DKV49J6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    50 |
+|    Minimum number of control sets                        |    50 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   347 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    50 |
+| >= 0 to < 4        |    48 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              69 |           30 |
+| No           | Yes                   | No                     |              16 |           16 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              16 |           16 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+----------------+---------------------------+------------------+----------------+--------------+
+|        Clock Signal        |  Enable Signal |      Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------+----------------+---------------------------+------------------+----------------+--------------+
+|  U13/c_reg[13]_LDC_i_1_n_0 |                | U13/c_reg[13]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  U13/c_reg[11]_LDC_i_1_n_0 |                | U13/c_reg[11]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  U13/c_reg[0]_LDC_i_1_n_0  |                | U13/c_reg[0]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  U13/c_reg[10]_LDC_i_1_n_0 |                | U13/c_reg[10]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  U13/c_reg[12]_LDC_i_1_n_0 |                | U13/c_reg[12]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  U13/c_reg[14]_LDC_i_1_n_0 |                | U13/c_reg[14]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  U13/c_reg[1]_LDC_i_1_n_0  |                | U13/c_reg[1]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  U13/c_reg[9]_LDC_i_1_n_0  |                | U13/c_reg[9]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  U13/c_reg[6]_LDC_i_1_n_0  |                | U13/c_reg[6]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  U13/c_reg[2]_LDC_i_1_n_0  |                | U13/c_reg[2]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  U13/c_reg[5]_LDC_i_1_n_0  |                | U13/c_reg[5]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  U13/c_reg[7]_LDC_i_1_n_0  |                | U13/c_reg[7]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  U13/c_reg[4]_LDC_i_1_n_0  |                | U13/c_reg[4]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  U13/c_reg[15]_LDC_i_1_n_0 |                | U13/c_reg[15]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  U13/c_reg[3]_LDC_i_1_n_0  |                | U13/c_reg[3]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  U13/c_reg[8]_LDC_i_1_n_0  |                | U13/c_reg[8]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[15] | U13/c_reg[14]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[15] | U13/c_reg[15]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[10]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[0]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[13]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[12]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[11]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[9]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[3]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[14]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[6]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[1]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[8]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[4]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[2]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[5]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[7]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  |                | U13/c_reg[15]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[11] | U13/c_reg[11]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[11] | U13/c_reg[10]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[11] | U13/c_reg[9]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[11] | U13/c_reg[8]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[7]  | U13/c_reg[0]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[7]  | U13/c_reg[1]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[7]  | U13/c_reg[6]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[7]  | U13/c_reg[2]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[7]  | U13/c_reg[5]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[7]  | U13/c_reg[7]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[7]  | U13/c_reg[4]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[7]  | U13/c_reg[3]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[15] | U13/c_reg[13]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  min_BUFG                  | U13/p_2_in[15] | U13/c_reg[12]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG             |                | btnU_IBUF                 |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG             |                | min_BUFG                  |                9 |             33 |         3.67 |
++----------------------------+----------------+---------------------------+------------------+----------------+--------------+
+
+
