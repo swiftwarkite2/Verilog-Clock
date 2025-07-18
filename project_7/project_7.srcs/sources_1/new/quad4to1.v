@@ -1,24 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 09/29/2024 05:08:46 PM
-// Design Name: 
-// Module Name: quad4to1
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// using the 5 mS clock that cycles the power, this module selects which of the four 4bit time digits to feed to the 7_seg_decoder
 //////////////////////////////////////////////////////////////////////////////////
-
 
 module quad4to1(
 output wire c0, c1, c2, c3,
