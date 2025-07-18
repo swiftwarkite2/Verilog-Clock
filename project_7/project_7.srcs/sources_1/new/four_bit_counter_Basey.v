@@ -1,26 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: Ethan Brown
-// 
-// Create Date: 09/29/2024 04:43:51 PM
-// Design Name: 
-// Module Name: four_bit_counter_Basey
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// this is the top.v equavalent module. it calls all 4 sub modules and connects them together and to the boards inputs and outputs 
-// the result of this circuit is that all 4 7segment displays are able to be controled individually and the 4 bits of switches for each of them are 
-// translated to hex for displaying.
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// connects the set module to the following modules that make the clock displayed on the 7_seg
 //////////////////////////////////////////////////////////////////////////////////
-
 
 module four_bit_counter_Basey(
 input wire Bclk,
