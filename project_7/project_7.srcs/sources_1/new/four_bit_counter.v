@@ -1,24 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 09/29/2024 04:42:34 PM
-
-// Module Name: four_bit_counter
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// transforms the 100mhz clock into a counting 33 bit register
 //////////////////////////////////////////////////////////////////////////////////
-
 
 module four_bit_counter(
 // this is multiplexer counter.v
