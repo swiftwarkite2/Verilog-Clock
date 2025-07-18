@@ -1,24 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 09/29/2024 05:06:59 PM
-// Design Name: 
-// Module Name: mux4to1
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// selects between the 1’s minute, 10’s minute, 1’s hour, or 10’s hour bcd to output
 //////////////////////////////////////////////////////////////////////////////////
-
 
 module mux4to1(
 output wire y,
