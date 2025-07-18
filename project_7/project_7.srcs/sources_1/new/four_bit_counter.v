@@ -4,7 +4,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module four_bit_counter(
-// this is multiplexer counter.v
 output reg [32:0]Q,
 input wire Clock, clr
     );
