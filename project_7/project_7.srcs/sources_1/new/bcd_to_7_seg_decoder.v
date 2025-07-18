@@ -1,24 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 09/29/2024 05:20:22 PM
-// Design Name: 
-// Module Name: bcd_to_7_seg_decoder
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// transforms 4 bit binary coded decimal input into a single 7_seg output
 //////////////////////////////////////////////////////////////////////////////////
-
 
 module bcd_to_7_seg_decoder(
 input wire w,x,y,z,
