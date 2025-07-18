@@ -4,7 +4,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module set(
-input wire [15:0]k, // connected to the stating time switches
+input wire [15:0]k, // connected to the starting time switches
 input wire clk, // minute clock
 input wire clr, // connected to btnL. used to latch the starting time switches into the c register
 output reg [15:0]c // outputs the time in bcd
