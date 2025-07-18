@@ -1,30 +1,13 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 10/06/2024 12:45:32 PM
-// Design Name: 
-// Module Name: set
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// manually sets the clock to a time via the 16 switches and butL. Also intelligently increments the time so as to display in the 4 seven segment displays
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module set(
-input wire [15:0]k,
-input wire clk,
-input wire clr,
-output reg [15:0]c
+input wire [15:0]k, // connected to the stating time switches
+input wire clk, // minute clock
+input wire clr, // connected to btnL. used to latch the starting time switches into the c register
+output reg [15:0]c // outputs the time in bcd
     );
 
 always @(posedge clk, posedge clr)
